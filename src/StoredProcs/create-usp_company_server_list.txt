@@ -1,0 +1,29 @@
+USE [CloudPhoenix]
+GO
+
+/****** Object:  StoredProcedure [dbo].[usp_company_server_list]    Script Date: 3/30/2016 9:37:53 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[usp_company_server_list]
+	-- Add the parameters for the stored procedure here
+	@companyId	INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT *
+	FROM Server
+	WHERE CompanyID = @companyId
+	ORDER BY DateCreated DESC
+END
+
+GO
+
+

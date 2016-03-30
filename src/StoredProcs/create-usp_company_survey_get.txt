@@ -1,0 +1,31 @@
+USE [CloudPhoenix]
+GO
+
+/****** Object:  StoredProcedure [dbo].[usp_company_survey_get]    Script Date: 3/30/2016 9:39:14 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[usp_company_survey_get]
+	-- Add the parameters for the stored procedure here
+	@companyId	INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT			Survey.*, 
+					QuestionSet.Question, 
+					AnswerSet.Answer
+	FROM            Survey 
+					LEFT OUTER JOIN QuestionSet ON Survey.QuestionSetID = QuestionSet.QuestionSetID 
+					LEFT OUTER JOIN AnswerSet ON Survey.AnswerSetID = AnswerSet.AnswerSetID
+END
+
+GO
+
+
