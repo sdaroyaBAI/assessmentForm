@@ -17,7 +17,7 @@
     }
 
     surveyController.prototype.getAllQuestions = function () {
-        this.surveyService.getAllQuestions().then(function (response) {
+        this.surveyService.getSurveyQuestions().then(function (response) {
             this.questions = response.data.Content;
         }.bind(this));
     };

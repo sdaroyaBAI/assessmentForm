@@ -7,9 +7,9 @@
     surveyService.$inject = ['$http', '$q'];
 
     function surveyService($http, $q) {
-        function getAllQuestions() {
+        function getSurveyQuestions(id) {
             var promise = $http({
-                url: "http://localhost:22088/api/survey", method: "GET"
+                url: "http://localhost:22088/api/survey" + id, method: "GET"
             }).then(function (response) {
                 return response;
             }, function (errorResponse) {
@@ -20,7 +20,7 @@
         }
 
         var service = {
-            getAllQuestions: getAllQuestions
+            getSurveyQuestions: getSurveyQuestions
         };
         return service;
     }
