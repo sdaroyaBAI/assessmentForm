@@ -1,0 +1,10 @@
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.dll.config
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.pdb
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.xml
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.csprojResolveAssemblyReference.cache
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.pdb
