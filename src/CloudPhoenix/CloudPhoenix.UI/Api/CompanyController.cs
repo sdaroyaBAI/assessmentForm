@@ -12,8 +12,12 @@ namespace CloudPhoenix.UI.Api
 {
     public class CompanyController : ApiController
     {
-        private CompanyRepository _comRepo;
-        
+        private ICompanyRepository _comRepo;
+
+        public CompanyController(ICompanyRepository comRepo)
+        {
+            _comRepo = comRepo;
+        }
 
         public HttpResponseMessage GetAll()
         {
@@ -22,7 +26,7 @@ namespace CloudPhoenix.UI.Api
 
             try
             {
-                _comRepo = new CompanyRepository(new CloudPhoenixDbContext());
+                //_comRepo = new CompanyRepository(new CloudPhoenixDbContext());
                 var comList = _comRepo.GetEntity("usp_company_list", new Dictionary<string, object>());
 
                 if (comList.Tables[0] != null)
@@ -46,7 +50,7 @@ namespace CloudPhoenix.UI.Api
 
             try
             {
-                _comRepo = new CompanyRepository(new CloudPhoenixDbContext());
+                //_comRepo = new CompanyRepository(new CloudPhoenixDbContext());
 
                 uspParam.Add("@companyId", id);
                 var comDetail = _comRepo.GetEntity("usp_company_detail_get", uspParam);
