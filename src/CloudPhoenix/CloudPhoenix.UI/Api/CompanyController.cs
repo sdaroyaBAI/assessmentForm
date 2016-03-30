@@ -1,5 +1,6 @@
 ﻿using CloudPhoenix.Common;
 using CloudPhoenix.Infra.Domain;
+using CloudPhoenix.Infra.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -65,6 +66,27 @@ namespace CloudPhoenix.UI.Api
             {
                 return this.Request.CreateResponse(HttpStatusCode.BadRequest, ex.GetBaseException().Message);
             }
+        }
+
+        public IHttpActionResult Post([FromBody]Company value)
+        {
+            var uspParam = new Dictionary<string, object>();
+
+            uspParam.Add("@companyId", value.CompanyID);
+            uspParam.Add("@OfficeAddress", value.OfficeAddress);
+            uspParam.Add("@ContactPerson", value.ContactPerson);
+            uspParam.Add("@Designation", value.Designation);
+            uspParam.Add("@Email", value.Email);
+            uspParam.Add("@ContactNumber", value.ContactNumber);
+            uspParam.Add("@NoOfServers", value.NoOfServers);
+            uspParam.Add("@Brand", value.Brand);
+            uspParam.Add("@Bandwith", value.Bandwith);
+            uspParam.Add("@ActiveDirectoryExists", value.ActiveDirectoryExists);
+
+
+            _comRepo.SaveEntity("usp_company_update", uspParam);
+
+            return Ok();
         }
 
     }

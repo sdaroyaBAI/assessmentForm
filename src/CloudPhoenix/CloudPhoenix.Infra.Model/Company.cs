@@ -15,6 +15,7 @@ namespace CloudPhoenix.Infra.Model
         public string ContactPerson { get; set; }
         public string Designation { get; set; }
         public string Email { get; set; }
+        public string ContactNumber { get; set; }
         public int NoOfServers { get; set; }
         public string Brand { get; set; }
         public double Bandwith { get; set; }
