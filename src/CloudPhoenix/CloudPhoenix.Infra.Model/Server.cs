@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CloudPhoenix.Model
+namespace CloudPhoenix.Infra.Model
 {
     public class Server
     {

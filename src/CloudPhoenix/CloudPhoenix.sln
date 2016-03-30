@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPhoenix.Common", "Clou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPhoenix.Infra.Domain", "CloudPhoenix.Infra.Domain\CloudPhoenix.Infra.Domain.csproj", "{7D9C927D-3615-42A0-829D-8A6658DF87B0}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CloudPhoenix.Model", "CloudPhoenix.Model\CloudPhoenix.Model.xproj", "{96EA6392-39F0-46E2-9958-A3EA2B2C1A99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPhoenix.Infra.Model", "CloudPhoenix.Infra.Model\CloudPhoenix.Infra.Model.csproj", "{1D6A5188-0EBE-4C83-B34C-7F52783C5AA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{7D9C927D-3615-42A0-829D-8A6658DF87B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D9C927D-3615-42A0-829D-8A6658DF87B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D9C927D-3615-42A0-829D-8A6658DF87B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96EA6392-39F0-46E2-9958-A3EA2B2C1A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96EA6392-39F0-46E2-9958-A3EA2B2C1A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96EA6392-39F0-46E2-9958-A3EA2B2C1A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96EA6392-39F0-46E2-9958-A3EA2B2C1A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6A5188-0EBE-4C83-B34C-7F52783C5AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6A5188-0EBE-4C83-B34C-7F52783C5AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6A5188-0EBE-4C83-B34C-7F52783C5AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6A5188-0EBE-4C83-B34C-7F52783C5AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
