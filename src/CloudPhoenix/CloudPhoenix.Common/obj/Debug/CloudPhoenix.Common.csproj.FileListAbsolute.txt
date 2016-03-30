@@ -8,3 +8,13 @@ c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix
 c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.csprojResolveAssemblyReference.cache
 c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.dll
 c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.pdb
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.dll.config
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.pdb
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.xml
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.csprojResolveAssemblyReference.cache
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.pdb

@@ -7,3 +7,12 @@ c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix
 c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.xml
 c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.dll
 c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.pdb
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Infra.Domain.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Infra.Domain.pdb
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Common.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Common.pdb
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.xml
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.csprojResolveAssemblyReference.cache
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.dll
+C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.pdb

@@ -10,10 +10,11 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 50px;
     xpadding-bottom: 10px;
+    
+    padding-top: 50px;
 }
 
-main
-{
+main {
     padding-top: 40px;
 }
 
@@ -28,4 +29,29 @@ footer {
 
 .text-muted {
     margin: 20px 0;
+}
+
+.navbar-brand
+{
+    float: left;
+    padding: 1px 1px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 45px;
+}
+
+.navbar-header
+{
+    height: 68px;
+}
+
+.navbar-right
+{
+    padding-top: 10px;
+}
+
+.navbar-header img
+{
+    vertical-align: top;
+    width: 100%;
 }
