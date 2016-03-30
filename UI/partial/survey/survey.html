@@ -1,96 +1,37 @@
-<div class="col-md-12" ng-controller="SurveyCtrl">
-<table class="table" style="width:1000px;">
+<div class="row" ng-controller="SurveyCtrl">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered table-hover">
             <thead>
-            <tr>
-                <th class="header">Kindly place a check inside the box that corresponds to your answer.</th>
-                <th class="header">YES</th>
-                <th class="header">NO</th>
-                <th class="header">I DON'T KNOW</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Q1. Is your company able to continue its operations should a manmade or natural disaster occur?</td>
-                <td><input type="radio" name="choices"></td>
-                <td><input type="radio" name="choices"></td>
-                <td><input type="radio" name="choices"></td>
-            </tr>
-            <tr>
-                <td>Q2. Assuming a manmade or natural disaster occurs, is your company able<br>
-                     to continue basic operations and support customer service remotely in case the<br>
-                      main office becomes inaccessible?</td>
-                <td><input type="radio" name="choices1"></td>
-                <td><input type="radio" name="choices1"></td>
-                <td><input type="radio" name="choices1"></td>
-            </tr>
-            <tr>
-                <td>Q3. Do you have a Business Continuity and Disaster Recovery (BC/DR)
-                    <br>Plan in place?<br>
-                   <b>If yes, please answer Q4-Q11.</b><br>
-                    <b>If no, please go straight to Q12.</b>
-                </td>
-                <td><input type="radio" name="choices2"></td>
-                <td><input type="radio" name="choices2"></td>
-                <td><input type="radio" name="choices2"></td>
-            </tr>
-            <tr>
-                <td>Q4. Has your company set a BC/DR IT plan?</td>
-                <td><input type="radio" name="choices3"></td>
-                <td><input type="radio" name="choices3"></td>
-                <td><input type="radio" name="choices3"></td>
-            </tr>
-            <tr>
-                <td>Q5. Has your company set standard RPOs (Recovery Point Objectives) and<br>
-                    RTOs (Recovery Time Objectives)?</td>
-                <td><input type="radio" name="choices4"></td>
-                <td><input type="radio" name="choices4"></td>
-                <td><input type="radio" name="choices4"></td>
-            </tr>
-            <tr>
-                <td>Q6. Does your BC/DR IT plan effectively support application groups?</td>
-                <td><input type="radio" name="choices5"></td>
-                <td><input type="radio" name="choices5"></td>
-                <td><input type="radio" name="choices5"></td>
-            </tr>
-            <tr>
-                <td>Q7. Does your company have an offsite BC/DR system in place?</td>
-                <td><input type="radio" name="choices6"></td>
-                <td><input type="radio" name="choices6"></td>
-                <td><input type="radio" name="choices6"></td>
-            </tr>
-            <tr>
-                <td>Q8. Does your key team have the necessary training for site failover? </td>
-                <td><input type="radio" name="choices7"></td>
-                <td><input type="radio" name="choices7"></td>
-                <td><input type="radio" name="choices7"></td>
-            </tr>
-            <tr>
-                <td>Q9. Does your BC/DR solution involve consistent non-disruptive testing 
-                    <br>throughout the year?</td>
-                <td><input type="radio" name="choices8"></td>
-                <td><input type="radio" name="choices8"></td>
-                <td><input type="radio" name="choices8"></td>
-            </tr>
-            <tr>
-                <td>Q10. Does your BC/DR system have the right level of support? </td>
-                <td><input type="radio" name="choices9"></td>
-                <td><input type="radio" name="choices9"></td>
-                <td><input type="radio" name="choices9"></td>
-            </tr>
-            <tr>
-                <td>Q11. Does your company run regular BC/DR drills? </td>
-                <td><input type="radio" name="choices0"></td>
-                <td><input type="radio" name="choices0"></td>
-                <td><input type="radio" name="choices0"></td>
-            </tr>
-            <tr>
-                <td>Q12. Does your company plan to set a BCD/DR plan within the year?</td>
-                <td><input type="radio" name="choices11"></td>
-                <td><input type="radio" name="choices11"></td>
-                <td><input type="radio" name="choices11"></td>
-            </tr>
-        </tbody>
-</table>
-<input type="button" name="submit" value="Submit" class="btn btn-primary">
+                <tr>
+                    <th class="header">Kindly place a check inside the box that corresponds to your answer.</th>
+                    <th class="header">YES</th>
+                    <th class="header">NO</th>
+                    <th class="header">I DON'T KNOW</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="question in questions">
+                    <td>
+                        {{ question.name }}
+                    </td>
+                    <td>
+                        <input type="radio" name={{question.name}}>
+                    </td>
+                    <td>
+                        <input type="radio" name={{question.name}}>
+                    </td>
+                    <td>
+                        <input type="radio" name={{question.name}}>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <div class="col-md-2">
+        &nbsp;
+    </div>
 </div>
