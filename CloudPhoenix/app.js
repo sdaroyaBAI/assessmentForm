@@ -2,6 +2,7 @@ angular.module('CloudPhoenix', ['ui.bootstrap','ui.utils','ui.router','ngAnimate
 
 angular.module('CloudPhoenix').config(function($stateProvider, $urlRouterProvider) {
 
+ 
     /* Add New States Above */
     $urlRouterProvider.otherwise('/home');
 
