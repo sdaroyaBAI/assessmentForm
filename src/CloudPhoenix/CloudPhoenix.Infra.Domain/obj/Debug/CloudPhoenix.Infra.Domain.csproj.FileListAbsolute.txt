@@ -1,0 +1,9 @@
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.csprojResolveAssemblyReference.cache
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Infra.Domain.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Infra.Domain.pdb
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Common.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Common.pdb
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.xml
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.dll
+c:\users\jcarino\documents\visual studio 2015\Projects\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.pdb
