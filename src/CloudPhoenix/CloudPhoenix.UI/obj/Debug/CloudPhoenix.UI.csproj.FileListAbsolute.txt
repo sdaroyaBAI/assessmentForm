@@ -259,3 +259,5 @@ C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.We
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\obj\Debug\CloudPhoenix.UI.csprojResolveAssemblyReference.cache
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\obj\Debug\CloudPhoenix.UI.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\obj\Debug\CloudPhoenix.UI.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Model.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Model.pdb

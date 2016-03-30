@@ -20,5 +20,8 @@ namespace CloudPhoenix.Infra.Model
         public string Brand { get; set; }
         public double Bandwith { get; set; }
         public bool ActiveDirectoryExists { get; set; }
+        public DateTime DateCreated { get; set; }
+        public string CreatedBy { get; set; }
+        public string UpdatedBy { get; set; }
     }
 }

@@ -314,6 +314,10 @@
       <Project>{7d9c927d-3615-42a0-829d-8a6658df87b0}</Project>
       <Name>CloudPhoenix.Infra.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CloudPhoenix.Infra.Model\CloudPhoenix.Infra.Model.csproj">
+      <Project>{1d6a5188-0ebe-4c83-b34c-7f52783c5aa8}</Project>
+      <Name>CloudPhoenix.Infra.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
