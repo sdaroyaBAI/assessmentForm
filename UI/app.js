@@ -24,6 +24,13 @@ angular.module('CloudPhoenix').config(function($stateProvider, $urlRouterProvide
         controllerAs: 'ctrl'
     });
     
+    $stateProvider.state('home', {
+        url: '/home',
+        templateUrl: 'partial/home/home.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'ctrl'
+    });
+    
     $urlRouterProvider.otherwise('/home');
 
 });
