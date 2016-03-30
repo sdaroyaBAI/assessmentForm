@@ -12,6 +12,11 @@ body {
     xpadding-bottom: 10px;
 }
 
+main
+{
+    padding-top: 40px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
