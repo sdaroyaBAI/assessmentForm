@@ -72,24 +72,32 @@ namespace CloudPhoenix.UI.Api
         {
             var uspParam = new Dictionary<string, object>();
 
-            uspParam.Add("@CompanyId", value.CompanyID);
-            uspParam.Add("@Name", value.CompanyName);
-            uspParam.Add("@OfficeAddress", value.OfficeAddress);
-            uspParam.Add("@ContactPerson", value.ContactPerson);
-            uspParam.Add("@Designation", value.Designation);
-            uspParam.Add("@Email", value.Email);
-            uspParam.Add("@ContactNumber", value.ContactNumber);
-            uspParam.Add("@NoOfServers", value.NoOfServers);
-            uspParam.Add("@Brand", value.Brand);
-            uspParam.Add("@Bandwith", value.Bandwith);
-            uspParam.Add("@ActiveDirectoryExists", value.ActiveDirectoryExists);
-            uspParam.Add("@DateCreated", value.DateCreated);
-            uspParam.Add("@Createdby", value.CreatedBy);
-            uspParam.Add("@UpdatedBy", value.UpdatedBy); 
-             
-            _comRepo.UpdateEntity("usp_company_update", uspParam);
+            try
+            {
+                uspParam.Add("@CompanyId", value.CompanyID);
+                uspParam.Add("@Name", value.CompanyName);
+                uspParam.Add("@OfficeAddress", value.OfficeAddress);
+                uspParam.Add("@ContactPerson", value.ContactPerson);
+                uspParam.Add("@Designation", value.Designation);
+                uspParam.Add("@Email", value.Email);
+                uspParam.Add("@ContactNumber", value.ContactNumber);
+                uspParam.Add("@NoOfServers", value.NoOfServers);
+                uspParam.Add("@Brand", value.Brand);
+                uspParam.Add("@Bandwith", value.Bandwith);
+                uspParam.Add("@ActiveDirectoryExists", value.ActiveDirectoryExists);
+                uspParam.Add("@DateCreated", value.DateCreated);
+                uspParam.Add("@Createdby", value.CreatedBy);
+                uspParam.Add("@UpdatedBy", value.UpdatedBy);
 
-            return Ok();
+                _comRepo.UpdateEntity("usp_company_update", uspParam);
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+            
         }
 
     }

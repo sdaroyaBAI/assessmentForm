@@ -10,6 +10,8 @@
         var self = this;
         self.questions = [];
         self.companyID = sharedService.getCompanyID();
+        
+        
 
         surveyService.getSurveyQuestions(self.companyID)
             .then(function (response) {
@@ -18,6 +20,7 @@
                 });
 
             }.bind(this));
+<<<<<<< HEAD
             
          self.shouldShow = function(i){
             var myEl = document.getElementById('r1-2');
@@ -30,5 +33,20 @@
              return true;
          }  
        
+=======
+        
+        self.shouldShow = function(i){
+            var myEl = document.getElementById('r1-2');
+            if(i>2 && i<11){
+                if(myEl.checked){
+                    return true;
+                }
+                return false;
+            }     
+            return true;
+        }
+>>>>>>> origin/master
     }
+    
+    
 })();
