@@ -9,7 +9,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 50px;
-    xpadding-bottom: 10px;
+    padding-bottom: 10px;
     
     padding-top: 50px;
 }
@@ -54,4 +54,9 @@ footer {
 {
     vertical-align: top;
     width: 100%;
+}
+
+#submitBtn
+{
+    float: right;
 }
