@@ -1,9 +1,3 @@
-angular.module('CloudPhoenix').factory('surveyService',function() {
-
-	var surveyService = {};
-
-	return surveyService;
-});
 (function () {
     "use strict";
 
@@ -13,9 +7,9 @@ angular.module('CloudPhoenix').factory('surveyService',function() {
     surveyService.$inject = ['$http', '$q'];
 
     function surveyService($http, $q) {
-        function getSurveyQuestions(id) {
+        function getAllQuestions() {
             var promise = $http({
-                url: "http://localhost:22088/api/survey" + id, method: "GET"
+                url: "http://localhost:22088/api/survey", method: "GET"
             }).then(function (response) {
                 return response;
             }, function (errorResponse) {
@@ -26,7 +20,7 @@ angular.module('CloudPhoenix').factory('surveyService',function() {
         }
 
         var service = {
-            getSurveyQuestions: getSurveyQuestions
+            getAllQuestions: getAllQuestions
         };
         return service;
     }
