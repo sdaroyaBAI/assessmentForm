@@ -11,8 +11,8 @@
     "eqnull": true,
     "browser": true,
     "smarttabs": true,
+    "validthis":true,
     "latedef": "nofunc",
-    "validthis": true,
     "globals": {
         "jQuery": true,
         "angular": true,

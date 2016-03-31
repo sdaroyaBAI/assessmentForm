@@ -12,7 +12,7 @@
 <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="container">
             <div class="navbar-header">
 <!--
@@ -22,7 +22,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
--->
+<<<<<<< HEAD
+                <!--<a class="navbar-brand" href="#"><img src="content/images/logo.png" alt="Company Logo" </a>-->
                 <a class="navbar-brand" href="#"><img src="content/images/logo.png" alt="Company Logo"/></a>
             </div>
            <!-- <div id="navbar" class="navbar-collapse collapse">
@@ -32,11 +33,12 @@
             </div>-->
             <!--/.nav-collapse -->
         </div>
-    </nav>
-
+    </nav><br><br>
     <main>
         <div class="container">
+            
             <div ui-view>
+                
             </div>
         </div>
     </main>
@@ -50,7 +52,7 @@
     </footer>
 
     <!-- Livereload script for development only (stripped during dist build) -->
-<!--    <script src="http://localhost:35729/livereload.js" data-concat="false"></script>-->
+    <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
 
     <!-- JS from Bower Components -->
     <script src="bower_components/less.js/dist/less-1.6.2.js" data-concat="false"></script>
@@ -76,7 +78,8 @@
     <script src="service/companyService.js"></script>
     <script src="service/serverService.js"></script>
     <script src="service/surveyService.js"></script>
-    <script src="service/sharedService.js"></script>
+    <script src="service/homeService.js"></script>
+    <script src="partial/createCompany/createCompany.js"></script>
     <!-- Add New Component JS Above -->
 
 </body>

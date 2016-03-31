@@ -1,3 +1,9 @@
+angular.module('CloudPhoenix').factory('surveyService',function() {
+
+	var surveyService = {};
+
+	return surveyService;
+});
 (function () {
     "use strict";
 
@@ -9,34 +15,18 @@
     function surveyService($http, $q) {
         function getSurveyQuestions(id) {
             var promise = $http({
-                url: "http://localhost:22088/api/survey/" + id, 
-                method: "GET"
+                url: "http://localhost:22088/api/survey" + id, method: "GET"
             }).then(function (response) {
-                return response.data.survey;
+                return response;
             }, function (errorResponse) {
                 console.log(errorResponse.status);
                 console.log(errorResponse.data);
             });
             return promise;
-        }
-        
-        function setSurveyAnswers(){
-            var promise = $http({
-                url: "http://localhost:22088/api/survey/", 
-                method: "POST"
-            }).then(function (response) {
-                return response.data.survey;
-            }, function (errorResponse) {
-                console.log(errorResponse.status);
-                console.log(errorResponse.data);
-            });
-            return promise;
-            
         }
 
         var service = {
-            getSurveyQuestions: getSurveyQuestions,
-            setSurveyAnswers: setSurveyAnswers
+            getSurveyQuestions: getSurveyQuestions
         };
         return service;
     }

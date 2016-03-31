@@ -6,13 +6,19 @@ angular.module('CloudPhoenix').config(function($stateProvider, $urlRouterProvide
     /* Add New States Above */
     
     $stateProvider.state('company', {
-        url: '/company',
+        url: '/company/:id',
         templateUrl: 'partial/company/company.html',
         controller: 'CompanyCtrl',
         controllerAs: 'ctrl'
     });
+    $stateProvider.state('createCompany', {
+        url: '/createCompany',
+        templateUrl: 'partial/createCompany/createCompany.html',
+        controller: 'CreatecompanyCtrl',
+        controllerAs: 'ctrl'
+    });
     $stateProvider.state('server', {
-        url: '/server',
+        url: '/server/:id',
         templateUrl: 'partial/server/server.html',
         controller: 'ServerCtrl',
         controllerAs: 'ctrl'

@@ -1,15 +1,28 @@
 <div class="col-md-12">
     <main class="container">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis tortor at tellus sodales hendrerit. Aliquam a augue odio. Duis auctor bibendum ligula, non porta enim varius eu. Sed accumsan scelerisque neque, ac malesuada ante laoreet quis. Praesent fringilla est eget fringilla efficitur. Suspendisse aliquet nisl eget facilisis posuere. Donec leo lacus, dictum non justo ut, commodo viverra turpis. Etiam vulputate velit eu odio elementum pulvinar. Etiam semper venenatis dictum. Nam vitae risus non libero tristique efficitur et quis quam.
-            <br>
-            <br>Curabitur eu placerat augue. Sed vestibulum aliquam neque, et vulputate odio ultrices vitae. Praesent eget ipsum faucibus, fermentum urna vitae, convallis ante. Praesent eleifend in mi vitae rhoncus. Aenean vitae consequat urna. Maecenas ultricies, neque ut blandit pharetra, tellus nunc porttitor tortor, nec ultricies neque diam a elit. Sed neque nisi, efficitur et tristique in, tincidunt quis elit. Nam tristique imperdiet dolor, at sodales velit commodo pellentesque. Donec at sollicitudin quam. Etiam dui sapien, tincidunt a nisl at, semper tempus leo. Praesent pretium porttitor tempor.
-            <br>
-            <br> Nam sit amet turpis metus. Pellentesque pellentesque gravida neque in ultricies. Morbi tristique, nunc sit amet hendrerit maximus, neque elit consectetur turpis, a porta ipsum nibh eu risus. Maecenas eu gravida neque. Vestibulum nec velit quis augue bibendum feugiat quis in felis. Maecenas tincidunt libero lacus, et aliquet massa tempor in. Proin fringilla et metus ac dapibus. Etiam viverra consectetur mattis. Donec nec velit sem. Quisque dictum, mi sit amet dapibus blandit, tellus nisl interdum turpis, quis fringilla nisl neque vitae diam. Morbi pretium dolor lorem, at mollis nibh dapibus et.
-            <br>
-            <br> Cras at bibendum diam. Duis convallis porttitor malesuada. Suspendisse vitae sagittis orci, in semper est. Morbi molestie ante ex. Duis euismod augue eu leo porttitor porta. Pellentesque pretium a nisl vel sodales. Phasellus ornare eros non ligula aliquam efficitur. Praesent non nulla sit amet risus sagittis mattis ac eget diam. Nam accumsan nulla est, nec tincidunt nisl sodales nec. Ut egestas ultrices pulvinar. Sed vitae porttitor est.
-            <br>
-            <br> Etiam interdum nulla sit amet enim porttitor suscipit ac vestibulum elit. Donec ut fermentum risus, id scelerisque est. Integer in tellus sit amet arcu fermentum ullamcorper id eget libero. Praesent sem enim, lobortis quis nibh vel, consequat consectetur tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in purus eu neque suscipit dictum sed sed sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque id elit tellus. Nam id turpis eu libero sagittis tempor id sed augue. Cras est diam, pretium dictum rhoncus sit amet, semper a justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Company Name</h3>
+            </div>
+        </div>
+       <div class="row" ng-repeat="company in ctrl.companies">
+           <div class="col-md-6" >
+               {{company.Name}}
+           </div>
+           <div class="col-md-2">
+               <a class="btn btn-primary" ui-sref="company({id:company.ID})">View Details</a>
+           </div>
+           <div class="col-md-2">
+               <a ui-sref="server({id:company.ID})" class="btn btn-primary">Server</a>
+           </div>
+            <div class="col-md-2">
+                <a href="/#/survey" class="btn btn-primary">Survey</a>
+            </div>
+       </div>
+       <div class="row">
+           <div class="col-md-12">
+               <input ui-sref="createCompany" type="submit" class="btn btn-primary" name="submit" value="Add New">
+            </div>
+       </div>
     </main>
-
 </div>

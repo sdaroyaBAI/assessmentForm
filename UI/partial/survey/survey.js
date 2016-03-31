@@ -3,21 +3,22 @@
     angular.module('CloudPhoenix').controller('SurveyCtrl', surveyController);
 
 
-    surveyController.$inject = ['surveyService', 'sharedService', '$scope'];
+    surveyController.$inject = ['surveyService', '$scope'];
 
+    function surveyController(surveyService, $scope) {
 
-    function surveyController(surveyService, sharedService, $scope) {
-        var self = this;
-        self.questions = [];
-        self.companyID = sharedService.getCompanyID();
-
-        surveyService.getSurveyQuestions(self.companyID)
-            .then(function (response) {
-                response.Table.forEach(function (item) {
-                    self.questions.push(item);
-                });
-
-            }.bind(this));
-       
+        $scope.questions = [{
+            name: "asd company"
+        }, {
+            name: "asd2 company"
+        }, {
+            name: "asd3 company"
+        }];
     }
+
+    surveyController.prototype.getAllQuestions = function () {
+        this.surveyService.getSurveyQuestions().then(function (response) {
+            this.questions = response.data.Content;
+        }.bind(this));
+    };
 })();
