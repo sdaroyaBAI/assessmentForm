@@ -24,7 +24,7 @@ angular.module('CloudPhoenix').config(function($stateProvider, $urlRouterProvide
         controllerAs: 'ctrl'
     });
     $stateProvider.state('survey', {
-        url: '/survey',
+        url: '/survey/:id',
         templateUrl: 'partial/survey/survey.html',
         controller: 'SurveyCtrl',
         controllerAs: 'ctrl'
