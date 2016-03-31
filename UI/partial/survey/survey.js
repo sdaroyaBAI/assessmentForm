@@ -20,7 +20,6 @@
                 });
 
             }.bind(this));
-<<<<<<< HEAD
             
          self.shouldShow = function(i){
             var myEl = document.getElementById('r1-2');
@@ -33,8 +32,6 @@
              return true;
          }  
        
-=======
-        
         self.shouldShow = function(i){
             var myEl = document.getElementById('r1-2');
             if(i>2 && i<11){
@@ -45,7 +42,6 @@
             }     
             return true;
         }
->>>>>>> origin/master
     }
     
     

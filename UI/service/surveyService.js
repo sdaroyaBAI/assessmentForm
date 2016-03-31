@@ -17,7 +17,7 @@ angular.module('CloudPhoenix').factory('surveyService',function() {
             var promise = $http({
                 url: "http://localhost:22088/api/survey/" + id, method: "GET"
             }).then(function (response) {
-                return response;
+                return response.data.survey;
             }, function (errorResponse) {
                 console.log(errorResponse.status);
                 console.log(errorResponse.data);
@@ -25,12 +25,13 @@ angular.module('CloudPhoenix').factory('surveyService',function() {
             return promise;
         }
 
-        function setSurveyAnswers(){
+        function setSurveyAnswers(answers){
              var promise = $http({
                  url: "http://localhost:22088/api/survey/", 
-                 method: "POST"
+                 method: "POST",
+                 data: answers
              }).then(function (response) {
-                 return response.data.survey;
+                 return response;
              }, function (errorResponse) {
                  console.log(errorResponse.status);
                  console.log(errorResponse.data);
