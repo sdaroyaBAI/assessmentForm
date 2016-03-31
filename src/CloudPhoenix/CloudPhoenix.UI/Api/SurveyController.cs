@@ -1,4 +1,5 @@
 ﻿using CloudPhoenix.Infra.Domain;
+using CloudPhoenix.Infra.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,23 @@ namespace CloudPhoenix.UI.Api
             var results = _comRepo.GetEntity("usp_company_survey_get", uspParam);
 
             return Ok(new { survey = results });
+        }
+
+        public IHttpActionResult Post([FromBody]List<Survey> value)
+        {
+            var uspParam = new Dictionary<string, object>();
+
+            foreach (var item in value)
+            {
+                uspParam.Add("@CompanyId", item.CompanyID);
+                uspParam.Add("@QuestionSetID", item.QuestionSetID);
+                uspParam.Add("@AnswerSetID", item.AnswerSetID);
+
+                _comRepo.UpdateEntity("usp_company_survey_update", uspParam);
+            }
+
+            return Ok();
+
         }
     }
 }
