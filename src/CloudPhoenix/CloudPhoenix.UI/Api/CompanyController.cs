@@ -71,6 +71,7 @@ namespace CloudPhoenix.UI.Api
         public IHttpActionResult Post([FromBody]Company value)
         {
             var uspParam = new Dictionary<string, object>();
+
             uspParam.Add("@CompanyId", value.CompanyID);
             uspParam.Add("@Name", value.CompanyName);
             uspParam.Add("@OfficeAddress", value.OfficeAddress);
@@ -84,9 +85,9 @@ namespace CloudPhoenix.UI.Api
             uspParam.Add("@ActiveDirectoryExists", value.ActiveDirectoryExists);
             uspParam.Add("@DateCreated", value.DateCreated);
             uspParam.Add("@Createdby", value.CreatedBy);
-            uspParam.Add("@UpdatedBy", value.UpdatedBy);
-
-            _comRepo.SaveEntity("usp_company_update", uspParam);
+            uspParam.Add("@UpdatedBy", value.UpdatedBy); 
+             
+            _comRepo.UpdateEntity("usp_company_update", uspParam);
 
             return Ok();
         }
