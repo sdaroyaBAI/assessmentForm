@@ -16,18 +16,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr data-ng-repeat="question in ctrl.questions">
+                <tr id="q-{{$index}}" data-ng-repeat="question in ctrl.questions" ng-show="ctrl.shouldShow($index)" >
                     <td>
                         {{ question.Question }}
                     </td>
                     <td>
-                        <input type="radio" name={{question.QuestionSetID}} value="yes" ng-model=question.Answer>
+                        <input id="r1-{{$index}}" type="radio" name={{question.QuestionSetID}} value="yes" ng-model=question.Answer>
                     </td>
                     <td>
-                        <input type="radio" name={{question.QuestionSetID}} value="no" ng-model=question.Answer>
+                        <input id="r2-{{$index}}" type="radio" name={{question.QuestionSetID}} value="no" ng-model=question.Answer>
                     </td>
                     <td>
-                        <input type="radio" name={{question.QuestionSetID}} value="I dont know" ng-model=question.Answer>
+                        <input id="r3-{{$index}}" type="radio" name={{question.QuestionSetID}} value="I dont know" ng-model=question.Answer>
                     </td>
                 </tr>
             </tbody>
