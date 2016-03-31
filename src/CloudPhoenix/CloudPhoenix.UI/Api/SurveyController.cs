@@ -23,7 +23,7 @@ namespace CloudPhoenix.UI.Api
             uspParam.Add("@companyId", id);
             var results = _comRepo.GetEntity("usp_company_survey_get", uspParam);
 
-            return Ok(new { servers = results });
+            return Ok(new { survey = results });
         }
     }
 }

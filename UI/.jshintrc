@@ -12,6 +12,7 @@
     "browser": true,
     "smarttabs": true,
     "latedef": "nofunc",
+    "validthis": true,
     "globals": {
         "jQuery": true,
         "angular": true,

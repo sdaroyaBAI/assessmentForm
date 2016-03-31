@@ -1,34 +1,40 @@
-<div class="row" ng-controller="SurveyCtrl">
+<head>
+    <link rel="stylesheet" href="/content/css/site.css"/>
+</head>
+<div class="row" ng-controller="SurveyCtrl" id="surveytable">
     <div class="col-md-2">
         &nbsp;
     </div>
     <div class="col-md-8">
-        <table class="table table-striped table-bordered table-hover">
+        <table class="table table-striped table-bordered table-hover table-responsive">
             <thead>
                 <tr>
                     <th class="header">Kindly place a check inside the box that corresponds to your answer.</th>
-                    <th class="header">YES</th>
-                    <th class="header">NO</th>
-                    <th class="header">I DON'T KNOW</th>
+                    <th class="header">Yes</th>
+                    <th class="header">No</th>
+                    <th class="header">I Don't Know</th>
                 </tr>
             </thead>
             <tbody>
-                <tr data-ng-repeat="question in questions">
+                <tr data-ng-repeat="question in ctrl.questions">
                     <td>
-                        {{ question.name }}
+                        {{ question.Question }}
                     </td>
                     <td>
-                        <input type="radio" name={{question.name}}>
+                        <input type="radio" name={{question.QuestionSetID}} value="yes" ng-model = question.Answer>
                     </td>
                     <td>
-                        <input type="radio" name={{question.name}}>
+                        <input type="radio" name={{question.QuestionSetID}} value="no" ng-model = question.Answer>
                     </td>
                     <td>
-                        <input type="radio" name={{question.name}}>
+                        <input type="radio" name={{question.QuestionSetID}} value="I dont know" ng-model = question.Answer>
                     </td>
                 </tr>
             </tbody>
         </table>
+        <form>
+            <input type="submit" class="btn btn-primary btn-md" value="Submit" id="submitBtn">
+        </form>
     </div>
 
     <div class="col-md-2">

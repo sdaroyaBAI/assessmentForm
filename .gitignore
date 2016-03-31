@@ -273,3 +273,8 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+src/CloudPhoenix/.vs/config/applicationhost.config
+src/CloudPhoenix/CloudPhoenix.Infra.Domain/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+src/CloudPhoenix/CloudPhoenix.Common/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+src/CloudPhoenix/.vs/CloudPhoenix/v14/.suo
+src/CloudPhoenix/.vs/config/applicationhost.config

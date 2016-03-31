@@ -9,9 +9,10 @@
     function surveyService($http, $q) {
         function getSurveyQuestions(id) {
             var promise = $http({
-                url: "http://localhost:22088/api/survey" + id, method: "GET"
+                url: "http://localhost:22088/api/survey/" + id, 
+                method: "GET"
             }).then(function (response) {
-                return response;
+                return response.data.survey;
             }, function (errorResponse) {
                 console.log(errorResponse.status);
                 console.log(errorResponse.data);

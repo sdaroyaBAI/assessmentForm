@@ -1,48 +1,22 @@
-/*
 (function () {
     "use strict";
     angular.module('CloudPhoenix').controller('SurveyCtrl', surveyController);
 
 
-    surveyController.$inject = ['surveyService', '$scope'];
-
-    function surveyController(surveyService, $scope) {
-
-        $scope.questions = [];
-        surveyService.getAllQuestions().then(function (results) {
-
-            $scope.questions = results.data;
-
-        });
-    }
-
-    surveyController.prototype.getAllQuestions = function () {
-        this.surveyService.getSurveyQuestions().then(function (response) {
-            this.questions = response.data.Content;
-        }.bind(this));
-    };
-})();
-*/
+    surveyController.$inject = ['surveyService', 'sharedService', '$scope'];
 
 
-(function(){
-    "use strict";
-    angular.module('CloudPhoenix').controller('SurveyCtrl', surveyController);
-
-
-    surveyController.$inject = ['surveyController','$scope'];
-    
-    
-     function surveyController(surveyService,$scope){
-         var self = this;
+    function surveyController(surveyService, sharedService, $scope) {
+        var self = this;
         self.questions = [];
-        
-        surveyService.getSurveyQuestions()
-        .then(function(response){
-            JSON.parse(response.survey)
-            .forEach(function(question) {
-                self.questions.push(question);
-            });
-        }.bind(this));
+        self.companyID = sharedService.getCompanyID();
+
+        surveyService.getSurveyQuestions(self.companyID)
+            .then(function (response) {
+                response.Table.forEach(function (item) {
+                    self.questions.push(item);
+                });
+
+            }.bind(this));
     }
 })();

@@ -55,3 +55,8 @@ footer {
     vertical-align: top;
     width: 100%;
 }
+
+#submitBtn
+{
+    float: right;
+}
