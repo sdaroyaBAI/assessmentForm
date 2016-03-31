@@ -19,9 +19,24 @@
             });
             return promise;
         }
+        
+        function setSurveyAnswers(){
+            var promise = $http({
+                url: "http://localhost:22088/api/survey/", 
+                method: "POST"
+            }).then(function (response) {
+                return response.data.survey;
+            }, function (errorResponse) {
+                console.log(errorResponse.status);
+                console.log(errorResponse.data);
+            });
+            return promise;
+            
+        }
 
         var service = {
-            getSurveyQuestions: getSurveyQuestions
+            getSurveyQuestions: getSurveyQuestions,
+            setSurveyAnswers: setSurveyAnswers
         };
         return service;
     }
