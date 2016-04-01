@@ -8,6 +8,7 @@ using Newtonsoft.Json.Serialization;
 using Microsoft.Practices.Unity;
 using CloudPhoenix.Common;
 using CloudPhoenix.Infra.Domain;
+using System.Web.Http.Cors;
 
 namespace CloudPhoenix.UI
 {
@@ -35,6 +36,14 @@ namespace CloudPhoenix.UI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            //Enables CORS
+            var cors = new EnableCorsAttribute(
+                origins: "*",
+                headers: "*",
+                methods: "*");
+
+            config.EnableCors(cors);
         }
     }
 }

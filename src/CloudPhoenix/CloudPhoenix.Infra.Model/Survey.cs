@@ -12,6 +12,7 @@ namespace CloudPhoenix.Infra.Model
         public int AnswerSetID { get; set; }
         public string UpdatedBy { get; set; }
         public string CreatedBy { get; set; }
+        public string SurveyID { get; set; }
         public DateTime DateCreated { get; set; }
 
     }
