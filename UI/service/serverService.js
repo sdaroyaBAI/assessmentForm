@@ -57,6 +57,7 @@
               console.log(errorResponse.status);
               console.log(errorResponse.data);
           });
+					return promise;
       }
 
 			var service = {

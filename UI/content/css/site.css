@@ -63,6 +63,10 @@ footer {
   .box-sizing(border-box); // Makes inputs behave like true block-level elements
 }
 
+.top-buffer {
+   margin-top:10px;
+}
+
 #submitBtn
 {
     float: right;
