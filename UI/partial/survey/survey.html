@@ -16,24 +16,24 @@
                 </tr>
             </thead>
             <tbody>
-                <tr data-ng-repeat="question in ctrl.questions">
+                <tr id="q-{{$index}}" data-ng-repeat="question in ctrl.questions" ng-show="ctrl.shouldShow($index)" >
                     <td>
                         {{ question.Question }}
                     </td>
                     <td>
-                        <input type="radio" name={{question.QuestionSetID}} value="yes" ng-model=question.Answer>
+                        <input id="r1-{{$index}}" type="radio" name={{question.QuestionSetID}} value="1" ng-model=question.AnswerSetID>
                     </td>
                     <td>
-                        <input type="radio" name={{question.QuestionSetID}} value="no" ng-model=question.Answer>
+                        <input id="r2-{{$index}}" type="radio" name={{question.QuestionSetID}} value="2" ng-model=question.AnswerSetID>
                     </td>
                     <td>
-                        <input type="radio" name={{question.QuestionSetID}} value="I dont know" ng-model=question.Answer>
+                        <input id="r3-{{$index}}" type="radio" name={{question.QuestionSetID}} value="3" ng-model=question.AnswerSetID>
                     </td>
                 </tr>
             </tbody>
         </table>
         <form>
-            <input type="submit" class="btn btn-primary btn-md" value="Submit" id="submitBtn" ng-click="setSurveyAnswers()">
+            <input type="submit" class="btn btn-primary btn-md" value="Submit" id="submitBtn" ng-click="ctrl.setAnswers(ctrl.questions)">
         </form>
     </div>
 
