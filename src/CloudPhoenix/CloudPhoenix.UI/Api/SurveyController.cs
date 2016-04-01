@@ -29,13 +29,15 @@ namespace CloudPhoenix.UI.Api
 
         public IHttpActionResult Post([FromBody]List<Survey> value)
         {
-            var uspParam = new Dictionary<string, object>();
-
             foreach (var item in value)
             {
+                var uspParam = new Dictionary<string, object>();
+
                 uspParam.Add("@CompanyId", item.CompanyID);
                 uspParam.Add("@QuestionSetID", item.QuestionSetID);
                 uspParam.Add("@AnswerSetID", item.AnswerSetID);
+                uspParam.Add("@Surveyid", item.SurveyID);
+                uspParam.Add("@UpdatedBy", string.Empty);
 
                 _comRepo.UpdateEntity("usp_company_survey_update", uspParam);
             }
