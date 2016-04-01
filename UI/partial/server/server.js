@@ -35,6 +35,10 @@
       }.bind(this));
     };
 
+    serverController.prototype.cancelEdit = function(item){
+      this.loadServers(this.$scope.id);
+    };
+
     serverController.prototype.saveEditedServers = function(newData){
       this.serverService.editServer(newData);
     };

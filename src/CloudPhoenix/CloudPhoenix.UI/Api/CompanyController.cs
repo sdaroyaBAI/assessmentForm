@@ -83,9 +83,9 @@ namespace CloudPhoenix.UI.Api
                 uspParam.Add("@ContactNumber", value.ContactNumber);
                 uspParam.Add("@NoOfServers", value.NoOfServers);
                 uspParam.Add("@Brand", value.Brand);
-                uspParam.Add("@Bandwith", value.Bandwith);
+                uspParam.Add("@Bandwith", value.Bandwidth);
                 uspParam.Add("@ActiveDirectoryExists", value.ActiveDirectoryExists);
-                uspParam.Add("@DateCreated", value.DateCreated);
+                uspParam.Add("@DateCreated", DateTime.Today);
                 uspParam.Add("@Createdby", value.CreatedBy);
                 uspParam.Add("@UpdatedBy", value.UpdatedBy);
 

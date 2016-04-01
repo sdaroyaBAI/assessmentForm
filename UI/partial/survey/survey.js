@@ -2,9 +2,7 @@
     "use strict";
     angular.module('CloudPhoenix').controller('SurveyCtrl', surveyController);
 
-
     surveyController.$inject = ['surveyService', 'sharedService', '$scope','$stateParams', '$location'];
-
 
     function surveyController(surveyService, sharedService, $scope,$stateParams,$location) {
         var self = this;
