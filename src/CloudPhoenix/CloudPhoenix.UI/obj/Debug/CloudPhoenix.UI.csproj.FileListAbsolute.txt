@@ -187,6 +187,7 @@ C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoe
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Antlr3.Runtime.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Common.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Domain.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Model.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\EntityFramework.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\EntityFramework.SqlServer.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.AspNet.Identity.Core.dll
@@ -210,7 +211,9 @@ C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Newtonsoft.Json.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Owin.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Net.Http.Formatting.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Cors.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Helpers.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Http.Cors.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Http.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Http.Owin.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Http.WebHost.dll
@@ -223,12 +226,14 @@ C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.We
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\WebGrease.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Common.pdb
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Domain.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Model.pdb
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.Practices.ServiceLocation.pdb
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.Practices.ServiceLocation.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.Practices.Unity.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Http.Cors.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\Newtonsoft.Json.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Net.Http.Formatting.xml
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.Web.Helpers.xml
@@ -259,5 +264,3 @@ C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\System.We
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\obj\Debug\CloudPhoenix.UI.csprojResolveAssemblyReference.cache
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\obj\Debug\CloudPhoenix.UI.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\obj\Debug\CloudPhoenix.UI.pdb
-C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Model.dll
-C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.UI\bin\CloudPhoenix.Infra.Model.pdb

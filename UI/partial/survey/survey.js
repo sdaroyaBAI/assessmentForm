@@ -3,13 +3,14 @@
     angular.module('CloudPhoenix').controller('SurveyCtrl', surveyController);
 
 
-    surveyController.$inject = ['surveyService', 'sharedService', '$scope'];
+    surveyController.$inject = ['surveyService', 'sharedService', '$scope','$stateParams'];
 
 
-    function surveyController(surveyService, sharedService, $scope) {
+    function surveyController(surveyService, sharedService, $scope,$stateParams) {
         var self = this;
         self.questions = [];
-        self.companyID = sharedService.getCompanyID();
+        //self.companyID = sharedService.getCompanyID();
+        self.companyID = $stateParams.id;
 
         surveyService.getSurveyQuestions(self.companyID)
             .then(function (response) {
@@ -18,11 +19,11 @@
                 });
 
             }.bind(this));
-        
+
         self.setAnswers = function(answers){
             surveyService.setSurveyAnswers(JSON.stringify(answers));
         };
-        
+
         self.shouldShow = function (i) {
             var myEl = document.getElementById('r1-2');
             if (!myEl.checked) {
