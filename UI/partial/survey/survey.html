@@ -18,7 +18,7 @@
             <tbody>
                 <tr id="q-{{$index}}" data-ng-repeat="question in ctrl.questions" ng-show="ctrl.shouldShow($index)" >
                     <td>
-                        {{ question.Question }}
+                    {{$index+1}}. {{ question.Question }}
                     </td>
                     <td>
                         <input id="r1-{{$index}}" type="radio" name={{question.QuestionSetID}} value="1" ng-model=question.AnswerSetID>
