@@ -1,28 +1,21 @@
-<div class="col-md-12">
-    <main class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Company Name</h3>
-            </div>
-        </div>
-       <div class="row" ng-repeat="company in ctrl.companies">
-           <div class="col-md-6" >
-               {{company.Name}}
-           </div>
-           <div class="col-md-2">
-               <a class="btn btn-primary" ui-sref="company({id:company.ID})">View Details</a>
-           </div>
-           <div class="col-md-2">
-               <a ui-sref="server({id:company.ID})" class="btn btn-primary">Server</a>
-           </div>
-            <div class="col-md-2">
-                <a ui-sref="survey({id:company.ID})" class="btn btn-primary">Survey</a>
-            </div>
-       </div>
-       <div class="row">
-           <div class="col-md-12">
-               <input ui-sref="createCompany" type="submit" class="btn btn-primary" name="submit" value="Add New">
-            </div>
-       </div>
-    </main>
+<ul class="list-group">
+                <li class="list-group-item list-group-item-info active header">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-11 col-xs-10">Company Name</div>
+                    </div>
+                </li>
+                <li class="list-group-item" ng-repeat="company in ctrl.companies">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-11 col-xs-10 wraptext"><link>{{company.Name}}</link></div>
+                        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs pull-right"><a class="btn btn-primary" ui-sref="company({id:company.ID})">View Details</a>
+                            <a ui-sref="server({id:company.ID})" class="btn btn-primary">Server</a>
+                            <a ui-sref="survey({id:company.ID})" class="btn btn-primary">Survey</a>
+                        </div>
+                    </div>
+                </li>
+</ul>
+<div class="row">
+    <div class="col-md-12">
+        <input ui-sref="createCompany" type="submit" class="btn btn-primary" name="submit" value="Add New">
+    </div>
 </div>
