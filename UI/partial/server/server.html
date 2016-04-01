@@ -1,25 +1,33 @@
 <div class="col-md-12" ng-controller="ServerCtrl">
     <table class="table">
         <thead>
-            <tr>
-                <td class="header">Server</td>
-                <td class="header">Virtual/Physical</td>
-                <td class="header">Processor Speed and Number of Cores</td>
-                <td class="header">Memory (Size)</td>
-                <td class="header">Hard Disk (Quantiry, Partition, Space)</td>
-                <td class="header">Applications Running</td>
-                <td class="header">Critical/Non Critical</td>
+            <tr class="row">
+                <td class="header col-md-2">Server</td>
+                <td class="header col-md-1">Virtual/Physical</td>
+                <td class="header col-md-2">Processor Speed and Number of Cores</td>
+                <td class="header col-md-1">Memory (Size)</td>
+                <td class="header col-md-2">Hard Disk (Quantiry, Partition, Space)</td>
+                <td class="header col-md-2">Applications Running</td>
+                <td class="header col-md-1">Critical/Non Critical</td>
+                <td class="header col-md-1">
+                </td>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>{{ctrl.server[0].Server}}</td>
-                <td>{{ctrl.server[0].ServerType}}</td>
-                <td>{{ctrl.server[0].Processor}}</td>
-                <td>{{ctrl.server[0].Memory}}</td>
-                <td>{{ctrl.server[0].HardDisk}}</td>
-                <td>{{ctrl.server[0].ApplicationsRunning}}</td>
-                <td>{{ctrl.server[0].CriticalNonCritical}}</td>
+            <tr class="row" ng-repeat="item in ctrl.server">
+                <td class="col-md-2"><span ng-hide="$$editServer">{{item.Server}}</span> <input ng-show="$$editServer" class="input-block-level"  type="text" name="server" value="" ng-model="item.Server"> </td>
+                <td class="col-md-1"><span ng-hide="$$editServer">{{item.ServerType}}</span><input ng-show="$$editServer" class="input-block-level" type="text" name="serverType" value="" ng-model="item.ServerType">  </td>
+                <td class="col-md-2"><span ng-hide="$$editServer">{{item.Processor}}</span><input ng-show="$$editServer" class="input-block-level" type="text" name="processor" value="" ng-model="item.Processor">  </td>
+                <td class="col-md-1"><span ng-hide="$$editServer">{{item.Memory}}</span><input ng-show="$$editServer" class="input-block-level" type="text" name="memory" value="" ng-model="item.Memory"> </td>
+                <td class="col-md-2"><span ng-hide="$$editServer">{{item.HardDisk}}</span> <input ng-show="$$editServer" class="input-block-level" type="text" name="hardisk" value="" ng-model="item.HardDisk"> </td>
+                <td class="col-md-2"><span ng-hide="$$editServer">{{item.ApplicationsRunning}}</span><input ng-show="$$editServer" class="input-block-level" type="text" name="applicationRunning" value="" ng-model="item.ApplicationsRunning">  </td>
+                <td class="col-md-1"><span ng-hide="$$editServer">{{item.CriticalNonCritical}}</span><input ng-show="$$editServer" class="input-block-level" type="text" name="criticality" value="" ng-model="item.CriticalNonCritical">  </td>
+                <td class="col-md-1">
+                    <a class="btn btn-xs btn-success btn-block" ng-click="$$editServer = ! $$editServer"  ng-hide="$$editServer"><span class="">edit</span></a>
+                    <a class="btn btn-xs btn-danger btn-block" ng-click="ctrl.deleteServer( item.ServerID )"  ng-hide="$$editServer"><span class="">remove</span></a>
+                    <a class="btn btn-xs btn-success btn-block" ng-click="$$editServer = ! $$editServer; ctrl.saveEditedServers(item)"  ng-show="$$editServer"><span class="">save</span></a>
+                    <a class="btn btn-xs btn-danger btn-block" ng-click="$$editServer = ! $$editServer; ctrl.loadServers(item.CompanyID)"  ng-show="$$editServer"><span class="">cancel</span></a>
+                </td>
             </tr>
         </tbody>
     </table>
