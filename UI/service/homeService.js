@@ -33,10 +33,11 @@
                 return promise;
             }
             
-            function createCompany(){
+         function createCompany(company){
                 var promise = $http({
                     url: "http://localhost:22088/api/company",
-                    method: "POST"
+                    method: "POST",
+                    data: company,
                 }).then(function(response){
                     return response;
                 }, function(errorResponse){
@@ -49,7 +50,8 @@
 
 			var service = {
                 getAllCompanies: getAllCompanies,
-                getCompanyById: getCompanyById
+                getCompanyById: getCompanyById,
+                createCompany: createCompany
 			};
 			return service;
 		}
