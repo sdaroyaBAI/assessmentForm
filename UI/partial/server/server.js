@@ -25,7 +25,7 @@
     };
 
     serverController.prototype.resetModal = function(){
-        this.$scope.newServer = {};
+      $("modal :input[type='text']").val('');
     };
 
     serverController.prototype.loadServers = function(id){
@@ -36,7 +36,6 @@
     };
 
     serverController.prototype.saveEditedServers = function(newData){
-
       this.serverService.editServer(newData);
     };
 
@@ -59,6 +58,7 @@
       this.serverService.editServer(self.$scope.newServer)
       .then(function(response){
         self.loadServers(self.$scope.id);
+        this.$scope.newServer = {};
       }.bind(this));
     };
 
