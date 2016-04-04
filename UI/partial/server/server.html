@@ -25,7 +25,7 @@
                 <td class="col-md-1"><span ng-hide="$$editServer">{{item.CriticalNonCritical}}</span><input ng-show="$$editServer" class="input-block-level" type="text" name="criticality" value="" ng-model="item.CriticalNonCritical">  </td>
                 <td class="col-md-1">
                     <a class="btn btn-xs btn-success btn-block" ng-click="$$editServer = ! $$editServer; ctrl.initiatelEdit(item)"  ng-hide="$$editServer"><span class="">edit</span></a>
-                    <a class="btn btn-xs btn-danger btn-block" data-toggle="modal" data-target="#myModal"  ng-hide="$$editServer"><span class="">remove</span></a>
+                    <a class="btn btn-xs btn-danger btn-block" data-toggle="modal" data-target="#myModal" ng-click="ctrl.setServerid(item.ServerID)"  ng-hide="$$editServer"><span class="">remove</span></a>
                     <a class="btn btn-xs btn-success btn-block" ng-click="$$editServer = ! $$editServer; ctrl.saveEditedServers(item)"  ng-show="$$editServer"><span class="">save</span></a>
                     <a class="btn btn-xs btn-danger btn-block" ng-click="$$editServer = ! $$editServer; ctrl.cancelEdit(item)"  ng-show="$$editServer"><span class="">cancel</span></a>
                 </td>
@@ -63,7 +63,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Add new company</h4>
+          <h4 class="modal-title">Add new server</h4>
         </div>
         <div class="modal-body ">
           <div class="row top-buffer">
