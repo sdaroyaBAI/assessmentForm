@@ -1,129 +1,158 @@
 <div class="col-md-12">
-      <div class="row">
-          <div class="col-md-12">
-              <h4>Company & Infrastructure Information</h4>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="companyName">Company Name</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].Name}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].Name" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="officeAddress">Office Address</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].OfficeAddress}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].OfficeAddress" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="contactPerson">Contact Person</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].ContactPerson}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].ContactPerson" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="designation">Designation</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].Designation}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].Designation" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="email">Email</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].Email}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].Email" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="contactNo">Contact No.</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].ContactPerson}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].ContactPerson" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-6">
-              <center><label for="infrastructure">Infrastructure</label></center>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="servers">Total No. of Servers</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].NoOfServers}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].NoOfServers" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="firewall">Brand and Model of Firewall/Gateway System</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].Brand}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].Brand" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="bandwidth">Internet Bandwidth</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].Bandwith}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].Bandwith" class="text"/>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <label for="activeDirectory">Do you have Active Directory (Y/N)</label>
-          </div>
-          <div class="col-md-4" ng-hide="$$editCompany">
-              {{ctrl.company[0].ActiveDirectoryExists}}
-          </div>
-          <div class="col-md-4" ng-show="$$editCompany">
-              <input type="text" ng-model="ctrl.company[0].ActiveDirectoryExists" class="text"/>
-          </div>
-      </div>
-        <div class="row">
-            <div class="col-md-2" ng-click="$$editCompany = ! $$editCompany">
-                <button type="button" class="btn btn-primary" ng-model="edit" ng-hide="$$editCompany">Edit</button>
-                <button type="button" class="btn btn-primary" ng-model="save" ng-show="$$editCompany">Save</button>
+    <ul class="list group col-md-10">
+        <li class="list-group-item list-group-item-info active header">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-11 col-xs-10">Company and Infrastructure Information</div>
             </div>
-        </div>
-</div>
+        </li>
 
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="companyName">Company Name</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].Name}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].Name" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="officeAddress">Office Address</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].OfficeAddress}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].OfficeAddress" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="contactPerson">Contact Person</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].ContactPerson}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].ContactPerson" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="designation">Designation</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].Designation}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].Designation" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].Email}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].Email" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="contactNo">Contact No.</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].ContactPerson}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].ContactPerson" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="servers">Total No. of Servers</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].NoOfServers}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].NoOfServers" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="firewall">Brand and Model of Firewall/Gateway System</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].Brand}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].Brand" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="bandwidth">Internet Bandwidth</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].Bandwith}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].Bandwith" class="text" />
+                </div>
+            </div>
+        </li>
+        
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="activeDirectory">Do you have Active Directory (Y/N)</label>
+                </div>
+                <div class="col-md-7" ng-hide="$$editCompany" >
+                    {{ctrl.company[0].ActiveDirectoryExists}}
+                </div>
+                <div class="col-md-7" ng-show="$$editCompany" >
+                    <input type="text" ng-model="ctrl.company[0].ActiveDirectoryExists" class="text" />
+                </div>
+            </div>
+        </li>
+
+        <div class="row">
+            <div class="col-md-5" ng-click="$$editCompany = ! $$editCompany">
+                <button type="button" class="btn btn-primary" ng-model="edit" ng-hide="$$editCompany">Edit</button>
+                <button type="button" class="btn btn-primary col-md-2" ng-model="save" ng-show="$$editCompany">Save</button>
+                <button type="button" class="btn btn-primary col-md-3" ng-model="cancel" ng-show="$$editCompany">Cancel</button>
+            </div>
+            
+        </div>
+    </ul>
+</div>

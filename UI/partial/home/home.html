@@ -1,10 +1,10 @@
-<ul class="list-group">
-                <li class="list-group-item list-group-item-info active header" style="width:750px;">
+<ul class="list-group col-md-9" >
+                <li class="list-group-item list-group-item-info active header">
                     <div class="row">
                         <div class="col-lg-5 col-md-5 col-sm-11 col-xs-10">Company Name</div>
                     </div>
                 </li>
-                <li class="list-group-item"  style="width:750px;" ng-repeat="company in ctrl.companies">
+                <li class="list-group-item" ng-repeat="company in ctrl.companies">
                     <div class="row">
                         <div class="col-lg-5 col-md-5 col-sm-11 col-xs-10 wraptext">
                             <link>{{company.Name}}</link>
@@ -13,6 +13,7 @@
                             <a class="btn btn-primary" ui-sref="company({id:company.ID})">View Details</a>
                             <a ui-sref="server({id:company.ID})" class="btn btn-primary">Server</a>
                             <a ui-sref="survey({id:company.ID})" class="btn btn-primary">Survey</a>
+                            <a ui-sref="delete({id:company.ID})" class="btn btn-primary">Remove</a>
                         </div>
                     </div>
                 </li>
