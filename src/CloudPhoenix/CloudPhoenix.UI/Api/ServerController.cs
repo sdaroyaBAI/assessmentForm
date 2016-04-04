@@ -24,13 +24,13 @@ namespace CloudPhoenix.UI.Api
             var results = _comRepo.GetEntity("usp_company_server_list", uspParam);
 
             return Ok(new { servers = results });
+
         }
 
+        //edited by john.
         public IHttpActionResult Post([FromBody]Server value)
         {
             var uspParam = new Dictionary<string, object>();
-
-
 
             try
             {
@@ -47,19 +47,27 @@ namespace CloudPhoenix.UI.Api
                 uspParam.Add("@DateCreated", value.DateCreated.Date);
                 uspParam.Add("@CreatedBy", value.CreatedBy);
 
-
                 _comRepo.UpdateEntity("usp_company_server_update", uspParam);
 
                 return Ok();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-
-                return BadRequest(e.Message);
+                return BadRequest(ex.Message);
             }
 
-           
+        }
+
+        public IHttpActionResult Delete(int id)
+        {
+            var uspParam = new Dictionary<string, object>();
+
+            uspParam.Add("@ServerId", id);
+            _comRepo.DeleteEntity("[usp_company_server_delete]", uspParam);
+
+            return Ok();
 
         }
+
     }
 }

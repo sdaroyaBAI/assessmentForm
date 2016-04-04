@@ -1,5 +1,4 @@
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Model\bin\Debug\CloudPhoenix.Infra.Model.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Model\bin\Debug\CloudPhoenix.Infra.Model.pdb
-C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Model\obj\Debug\CloudPhoenix.Infra.Model.csprojResolveAssemblyReference.cache
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Model\obj\Debug\CloudPhoenix.Infra.Model.dll
 C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Model\obj\Debug\CloudPhoenix.Infra.Model.pdb

@@ -17,7 +17,7 @@ namespace CloudPhoenix.Infra.Model
         public string Email { get; set; }
         public string ContactNumber { get; set; }
         public int NoOfServers { get; set; }
-        public string Brand { get; set; };
+        public string Brand { get; set; }
         public double Bandwidth { get; set; }
         public string ActiveDirectoryExists { get; set; }
         public DateTime DateCreated { get; set; }

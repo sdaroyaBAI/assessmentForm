@@ -18,3 +18,13 @@ C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFr
 C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.csprojResolveAssemblyReference.cache
 C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.dll
 C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.dll.config
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\CloudPhoenix.Common.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.xml
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.csprojResolveAssemblyReference.cache
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Common\obj\Debug\CloudPhoenix.Common.pdb

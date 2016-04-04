@@ -16,3 +16,12 @@ C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\En
 C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.csprojResolveAssemblyReference.cache
 C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.dll
 C:\GitHub\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Infra.Domain.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Infra.Domain.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Common.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\CloudPhoenix.Common.pdb
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\bin\Debug\EntityFramework.xml
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.csprojResolveAssemblyReference.cache
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.dll
+C:\angularTraining\assessmentForm\src\CloudPhoenix\CloudPhoenix.Infra.Domain\obj\Debug\CloudPhoenix.Infra.Domain.pdb

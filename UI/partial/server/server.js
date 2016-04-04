@@ -25,7 +25,7 @@
     };
 
     serverController.prototype.resetModal = function(){
-      $("modal :input[type='text']").val('');
+      $("input[type='text']").val('');
     };
 
     serverController.prototype.loadServers = function(id){
